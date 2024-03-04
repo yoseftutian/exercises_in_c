@@ -1,0 +1,121 @@
+#include <stdio.h>
+
+
+void main() {
+    int a;
+    int b = 1;
+    printf("Enter a score: ");
+    scanf_s("%d", &a);
+
+    
+    for (int i = 1; i <= a; i++) {
+        b *= i;
+
+    }
+    
+    printf("The factorial of %d is: %d\n",a,b);
+
+
+}
+
+
+תרגיל 19 ##include<stdio.h>
+void main() {
+    int number1, number2, result = 1;
+    printf("Enter a number: ");
+    scanf_s("%d %d", &number1, &number2);
+    for (int i = 1; i <= number2; i++) {
+        result *= number1;
+    }
+    printf("The result is: %d", result);
+   
+}
+
+תרגיל 20
+#include<stdio.h>
+void main() {
+    int sum = 0, i, number;
+    for (i = 1; i <= 10; i++) {
+        printf("%d", i);
+
+        printf("Enter 10 numbers: ");
+        scanf_s("%d", &number);
+        sum += number;
+    }
+    if (sum > 0) {
+        printf("The sum is greater than zero.\n");
+    }
+    // בדיקה אם המספר קטן מאפס
+    else if (sum < 0) {
+        printf("The sum is less than zero.\n");
+    }
+    // אם המספר אפס
+    else {
+        printf("The number is zero.\n");
+    }
+   
+תרגיל 21
+
+
+
+#include<stdio.h>
+void main() {
+    int average = 0, i, number, sum = 0;
+    for (i = 1; i <= 10; i++) {
+        printf("%d", i);
+
+
+        printf("Enter a numbers: ");
+        scanf_s("%d", &number);
+        if (number == 0) {
+            break;
+        }
+        sum += number;
+        average = sum/i;
+    }
+    printf("The sum is:%d\n", sum);
+    printf("The average is:%d\n", average);
+    printf("The numbers is:%d\n", i-1);
+}
+  תרגיל 22  
+ #include<stdio.h>
+
+/*
+input till 0
+*/
+
+void main() {
+
+    // declare vars
+    int counter = 0, sum = 0, number = 1;
+   
+
+  
+    while (sum < 100) {
+
+        printf("enter a number: ");
+        scanf_s("%d", &number);
+        sum += number;
+        counter++;
+    }
+        printf("counter: %d, sum: %d,\n\n", counter, sum);
+
+
+    }
+
+
+תרגיל 23
+
+#include<stdio.h>
+
+void main() {
+	int number1 = 3, number2 = 2;
+
+	while (number1 % number2 != 0 && number2 % number1 != 0)
+	{
+		printf("enter a number: ");
+		scanf_s("%d%d", &number2, &number1);
+
+	}
+
+}

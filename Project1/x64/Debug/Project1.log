@@ -1,0 +1,3 @@
+﻿  exercises_03.cpp
+C:\repos\mego\c\exercises\Project1\exercises_03.cpp(122,9): warning C4101: 'c': unreferenced local variable
+  Project1.vcxproj -> C:\repos\mego\c\exercises\Project1\x64\Debug\Project1.exe
